@@ -21,7 +21,6 @@ static const char * MTCollectionViewCardLayoutHelperKey = "UICollectionViewCardL
 	MTCollectionViewCardLayoutHelper *helper = objc_getAssociatedObject(self, MTCollectionViewCardLayoutHelperKey);
 	if (helper)
 	{
-		[helper unbindFromCollectionView:self];
 		objc_setAssociatedObject(self, MTCollectionViewCardLayoutHelperKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 	}
 }
