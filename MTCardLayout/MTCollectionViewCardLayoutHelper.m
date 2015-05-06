@@ -5,8 +5,6 @@
 #define DRAG_CURVE_LIMIT 80.0
 #define DRAG_ACTION_LIMIT 150.0
 
-static int kObservingCollectionViewOffset;
-
 static NSString * const kContentOffsetKeyPath = @"contentOffset";
 
 @implementation MTCollectionViewCardLayoutHelper
