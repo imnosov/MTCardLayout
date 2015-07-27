@@ -139,7 +139,7 @@
     effectiveBounds.size.height -= _metrics.listingInsets.top + _metrics.listingInsets.bottom;
 	rect = CGRectIntersection(rect, effectiveBounds);
     
-    NSRange range = rangeForVisibleCells(rect, [self.collectionView numberOfItemsInSection:0] , _metrics);
+    NSRange range = rangeForVisibleCells(self.collectionView.bounds, [self.collectionView numberOfItemsInSection:0] , _metrics);
     
     NSMutableArray *cells = [NSMutableArray arrayWithCapacity:range.length + 2];
     
